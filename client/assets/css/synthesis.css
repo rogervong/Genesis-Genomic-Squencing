@@ -1,0 +1,87 @@
+.synthesis_container {
+    font-family: 'Din Alternate Light';
+    font-size: 15.5;        
+}
+.synthesis_background {
+    background-image: url(/assets/images/synthesis/greyboxesdecoration.png), url(/assets/images/synthesis/images.png), radial-gradient(circle, #15152d, #26284e);
+        background-position: 100% 25%, 45% 55%;
+        background-repeat:  no-repeat;
+        height:100vh;
+}
+.synthesis_content {
+    position: absolute;
+    z-index: 300;
+    right: 21.7%;
+    bottom: 30%;
+    width: 433px;
+    height: 336px;
+    color: #ddb06f;
+    background:url(/assets/images/synthesis/goldbars.png) no-repeat;
+}
+.synthesis_content_background {
+    width: 298px;
+    background-color: #292d4a;
+}
+#synthesis_equation {
+    /*position: absolute;*/
+    /*right: 10%;*/
+    /*bottom: 20%;*/
+    /*color: #ddb06f;*/
+    margin-top: 35px;
+    margin-left: 15%;
+    width: 143px;
+    height: 57px;
+    background:url(/assets/images/synthesis/equation.png) no-repeat;
+
+}
+.synthesis_equation_input {
+    resize: none;
+    width: 17px;
+    height: 17px;
+    position: relative;
+    right: 0%;
+    bottom: 0%;
+    font-size: 11.2px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+#synthesis_equation_input1 {
+    position: relative;
+    right: -78%;
+    bottom: 5%;
+}
+#synthesis_equation_input2 {
+    position: relative;
+    right: -63%;
+    bottom: -60%;
+}
+.heading_white {
+    font-family: 'Din Alternate Medium';
+    font-size: 22;
+    color: #ededed;
+    padding-left: 6px;
+}
+.subheading_var {
+    font-family: 'Din Alternate Light';
+    font-size: 13;
+    color: #999999;
+    text-align: left;
+    padding-left: 2px;
+}
+.synthesis_button {
+    background:url(/assets/images/synthesis/calculatebutton.png) no-repeat;
+    cursor:pointer;
+    border:none;
+    width:90px;
+    height:30px;
+    opacity: 1;
+    margin: 10% 0% 6% 25%;
+}
+.synthesis_button:hover {
+  opacity: 0.65;
+}
+.synthesis_button:active {
+     opacity: 0.15;
+}

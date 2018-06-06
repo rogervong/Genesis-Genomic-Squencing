@@ -1,0 +1,26 @@
+<img class="sidedots" src="assets/images/synthesis/doctscalculation.png">
+<div class="synthesis_container">
+    <div class="synthesis_background">
+        <div class="synthesis_content">
+            <div class="synthesis_content_background">
+                <h3>Modern Evolution Synthesis</h3>
+                <div id="synthesis_equation">
+                    <textarea cols="1" rows="1" class="synthesis_equation_input" id="synthesis_equation_input1" ng-model='S'>S</textarea>
+                    <textarea cols="1" rows="1" class="synthesis_equation_input" id="synthesis_equation_input2" ng-model='N'>N</textarea>
+                </div>
+                <button class="synthesis_button" ng-click="calculate()"></button>
+
+                <div id="content_bottom" ng-if="!buttonPressed">
+                    <h3 class="heading_white">MUTANT GENE FIXATION</h3>
+                    <h5 class="subheading_var">N = Population of Breeding Diploid Organisms.</h5>
+                    <h5 class="subheading_var">S = Selective Advantage of Allele.</h5>
+                </div>
+                <div id="content_bottom" ng-if="buttonPressed">
+                    <h3 class="heading_white">Is There Selection?</h3>
+                    <h5 class="subheading_var">P = {{P}}</h5>
+                    <h5 class="subheading_var">{{A}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

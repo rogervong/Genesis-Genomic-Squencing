@@ -1,0 +1,63 @@
+/*index.html*/
+
+.splash_wrapper {
+    background-image: url(/assets/images/splash/genesisbackground.jpg) ;
+            background-position: center center;
+            background-repeat:  no-repeat;
+            background-attachment: fixed;
+            background-size:  cover;
+            background-color: #000000;
+            height:100vh
+}
+
+.splash_content { /*center vertically and horizontally*/
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 100;
+}
+
+.splash_button {
+    background:url(/assets/images/splash/sequencebutton.png) no-repeat;
+    cursor:pointer;
+    border:none;
+    width:126px;
+    height:42px;
+    opacity: 1;
+}
+.splash_button:hover {
+  opacity: 0.65;
+
+}
+.splash_button:active {
+     opacity: 0.15;
+}
+
+.splash_footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:37px;
+   width:100%;
+   background:#999;
+   text-align: center;
+
+}
+.splash_footer_image {
+    color: #ededed;
+    background: url(/assets/images/splash/bottomfooter.png) repeat;
+    width:100%;
+    height:40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-top: 12px;
+    font-size: 0.8em;
+}​​​​​​​​​
+
+/*end of index.html*/

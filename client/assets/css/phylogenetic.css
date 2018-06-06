@@ -1,0 +1,104 @@
+.thiscontainer{
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+
+  background-color: #ededed;
+  width: 100%;
+  height: auto;
+  padding-top: -100px;
+  overflow-x: hidden;
+}
+#bar {
+  color: white;
+  margin-top: 7%;
+  margin-left: -21%;
+  width: 10%;
+}
+charts{
+  margin-bottom: 0px;
+}
+
+#tree{
+  margin-top: -5%;
+  margin-left: 29.5%;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+  height: 350px;
+  width: auto;
+  display: inline-block;
+}
+.bigbar {
+  background-color: #292c4b;
+  margin-top: -8%;
+  margin-bottom: 3%;
+  margin-left: -5%;
+  width: 60%;
+  height: 740px;
+  margin-left: 21%;
+  padding-top: 3%;
+}
+#gold{
+  position: absolute;
+  width: 400px;
+  height: -800px;
+}
+
+.dots{
+  margin-left: 2%;
+  margin-top: -115%;
+  display: inline-block;
+}
+
+#photo {
+  height: 379px;
+  width: 729px;
+  margin-top: 15%;
+  margin-left: 42%;
+  margin-bottom: 12%;
+  z-index: -2;
+  background-image: url("../images/phylogenetic/backgroundimage.png");
+  background-size: contain;
+}
+#head1{
+  margin-left: 31%;
+  font-size: 30px;
+  margin-top: -10%;
+  color: #ddb06f;
+}
+#subhead2{
+  font-size: 12px;
+  color: #999999;
+  display: block;
+  margin-left: 24%;
+  margin-top: 2%;
+}
+#deco{
+  margin-left: 75%;
+}
+#last{
+  font-size: 25px;
+  color: #ddb06f;
+  top: 70px;
+  left: -360px;
+  z-index: 100;
+  position: relative;
+  display: inline-block;
+}
+
+label.compMeth{
+  font-size: 2em;
+  position: relative;
+  z-index: 100;
+  left: -360px;
+  top: -400px;
+}
+
+p.phyParagraph{
+    position: relative;
+    z-index: 100;
+    font-size: 1.2em;
+    left: -360px;
+    top: -400px;
+    width: 537px;
+}

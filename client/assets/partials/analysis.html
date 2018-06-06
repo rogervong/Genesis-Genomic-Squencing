@@ -1,0 +1,43 @@
+
+
+<img class="sidedots" src="assets/images/sidedots.png">
+
+<div class="analysis_container" id="outer">
+    <div class="analysis_content center_vertical">
+
+        <div class="analysis_content_subheading1">
+            <img src="assets/images/analysis/subheading1.png">
+            <div>
+                <select class="ref_genome_select" ng-model="genome_ref">
+                    <option value="" disabled selected>Reference</option>
+                    <option  class="ref_genome_option" ng-repeat="genome in genomes">{{genome.simple_name}}</option>
+                </select>
+                <img src="assets/images/analysis/addbutton.png">
+            </div>
+        </div>
+
+        <div class="analysis_content_subheading2">
+            <img src="assets/images/analysis/subheading2.png">
+            <div>
+            <select class="comp_genome_select" ng-model="genome_comp1">
+                <option value="" disabled selected>1st</option>
+                <option  class="ref_genome_option" ng-repeat="genome in genomes">{{genome.simple_name}}</option>
+            </select>
+            <select class="comp_genome_select"  ng-model="genome_comp2">
+                <option value="" disabled selected>2nd</option>
+                <option  class="ref_genome_option" ng-repeat="genome in genomes">{{genome.simple_name}}</option>
+            </select>
+            <select class="comp_genome_select" ng-model="genome_comp3">
+                <option value="" disabled selected>3rd</option>
+                <option  class="ref_genome_option" ng-repeat="genome in genomes">{{genome.simple_name}}</option>
+            </select>
+            <select class="comp_genome_select"  ng-model="genome_comp4">
+                <option value="" disabled selected>4th</option>
+                <option  class="ref_genome_option" ng-repeat="genome in genomes">{{genome.simple_name}}</option>
+            </select>
+            </div>
+            <p class="analysis_text">In the sequence analysis portion of our application, researchers will have the ability to select, or enter their own parent genomic strand to compare subsequent strands up to. Following which a genetic evaluation of mutations/type will be displayed graphically.</p>
+            <button class="analysis_button" ng-click="submit()"></button>
+        </div>
+
+    </div>

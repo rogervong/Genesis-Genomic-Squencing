@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <title>Genesis</title>
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/index.css"> <!-- splash page -->
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/analysis.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/analysis_results.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/synthesis.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/phylogenetic.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/particles.css">
+
+</head>
+<body ng-controller="MainController">
+
+ <header ng-if="currentPage !== '/'">
+    <nav class="navbar navbar-light bg-faded navbar-fixed-top" id="genesis_navbar">
+      <a class="logo" href="#/"><img src="assets/images/main/genesislogo.png" id="nav_logo"></a>
+      <ul class="navigation_bar">
+        <li class="listing_bar">
+          <a class="" href="#/analysis"><img src="/assets/images/main/navigationunderscore.png" id="nav_1" ng-if="currentPage === '/genesis' || currentPage === '/analysis'">Genome Select</a>
+        </li>
+        <li class="listing_bar">
+          <a class="" href="#/analysis/results"><img src="/assets/images/main/navigationunderscore.png" id="nav_15" ng-if="currentPage === '/analysis/results'">Sequence Analysis</a>
+        </li>
+        <li class="listing_bar">
+          <a class="" href="#/synthesis"><img src="/assets/images/main/navigationunderscore.png" id="nav_2" ng-if="currentPage === '/synthesis'">Modern Evolution Synthesis</a>
+        </li>
+        <li class="listing_bar">
+          <a class="" href="#/phylogenetics"><img src="/assets/images/main/navigationunderscore.png" id="nav_3" ng-if="currentPage === '/phylogenetics'">Phylogenetics</a>
+        </li>
+      </ul>
+    </nav>
+</header>
+
+
+
+<div ng-view></div>
+</div>
+
+
+
+<!-- Links to API for development -->
+<!-- <div ng-if="currentPage !== '/'">
+    <h4>&nbsp;</h4>
+    <h4 style="text-align: center">json: <a href="/genomes">genomes</a></h4>
+    <h4>&nbsp;</h4>
+</div> -->
+<!-- End of links to API for development -->
+
+<div class="main_footer" ng-if="currentPage !== '/'">
+    <div class="main_footer_left">&#169; Copyright 2016 Genesis Ltd. All Rights Reserved</div>
+    <div class="main_footer_right">Terms | Policy</div>
+</div>
+
+
+<div id="particles-js"></div>
+<script src="assets/js/particles.min.js"></script>
+<script src="assets/js/particlesJS.js"></script>
+
+
+
+
+
+</body>
+
+<script src="angular/angular.js"></script>
+<script src="angular-route/angular-route.js"></script>
+<script src="assets/app.js"></script>
+
+<script src="assets/services/analysisService.js"></script>
+<script src="assets/controllers/MainController.js"></script>
+<script src="assets/controllers/indexController.js"></script>
+
+<script src="assets/controllers/d3Controller.js"></script>
+<script src="assets/factories/d3Factory.js"></script>
+
+<script src="assets/factories/analysisFactory.js"></script>
+<script src="assets/controllers/analysisController.js"></script>
+<script src="assets/controllers/resultsController.js"></script>
+
+<script src="assets/controllers/synthesisController.js"></script>
+
+<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+
+
+</html>

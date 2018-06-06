@@ -1,0 +1,37 @@
+
+<div class="analysis_results_container center_horizontal">
+    <div><img id="legend_bar" src="assets/images/analysis/legendbar.png"></div>
+    <h3 class="results_heading_ref">Reference Strand</h3>
+    <div class="sequence_box_gold">
+        <span ng-repeat="val in ref.codon track by $index">
+            <span class="hover" data-tooltip="{{ref.amino[$index]}}" data-tooltip-position="top">{{ref.codon[$index]}} </span>
+        </span>
+    </div>
+
+    <h3 class="results_heading_comp">Comparison Strand 1</h3>
+    <div class="sequence_box_black">
+        <span ng-repeat="val in comp1.codon track by $index">
+            <span class="hover {{comp1.color[$index]}}" data-tooltip="{{comp1.amino[$index]}}" data-tooltip-position="top">{{comp1.codon[$index]}}</span>
+        </span>
+    </div>
+
+    <h3 class="results_heading_comp">Comparison Strand 2</h3>
+    <div class="sequence_box_black">
+        <span ng-repeat="val in comp2.codon track by $index">
+            <span class="hover {{comp2.color[$index]}}" data-tooltip="{{comp2.amino[$index]}}" data-tooltip-position="top">{{comp2.codon[$index]}}</span>
+        </span>
+    </div>
+
+    <h3 class="results_heading_comp">Comparison Strand 3</h3>
+    <div class="sequence_box_black">
+        <span ng-repeat="val in comp3.codon track by $index">
+            <span class="hover {{comp3.color[$index]}}" data-tooltip="{{comp3.amino[$index]}}" data-tooltip-position="top">{{comp3.codon[$index]}}</span>
+        </span>
+    </div>
+
+    <h3 class="results_heading_comp">Comparison Strand 4</h3>
+    <div class="sequence_box_black">
+        <span ng-repeat="val in comp4.codon track by $index">
+            <span class="hover {{comp4.color[$index]}}" data-tooltip="{{comp4.amino[$index]}}" data-tooltip-position="top">{{comp4.codon[$index]}}</span>
+        </span>
+    </div>
